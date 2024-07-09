@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import Profile from './pages/Profile.jsx';
 import PostDetail from './pages/PostDetail.jsx';
@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <nav>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/profile">Profile</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/profile">Profile</Link></li>
           </ul>
         </nav>
         <Routes>
@@ -28,3 +28,4 @@ function App() {
 }
 
 export default App;
+
